@@ -18,6 +18,11 @@ This is a hollywood movie recommender system built with Python. I've used IMDB 5
 
 Live Demo : [Movie Recommender System by Kishan](https://movierecommendersystem.herokuapp.com)
 
+### Snapshot
+
+![image](https://user-images.githubusercontent.com/36665975/70497461-43097300-1b39-11ea-9001-b5019c0a7db7.png)
+
+
 Link to the dataset :- [IMDB 5000 Movie Dataset](https://www.kaggle.com/carolzhangdc/imdb-5000-movie-dataset)
 
 
