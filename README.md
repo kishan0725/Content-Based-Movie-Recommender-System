@@ -2,6 +2,8 @@
 
 Content Based Recommender System recommends items similar to the items user likes. How does it decide which item is most similar to the item user likes? Here we use the similarity scores.
 
+Live Demo : [Movie Recommender System by Kishan](https://movierecommendersystem.herokuapp.com)
+
 ## Similarity Score : 
    It is a numerical value ranges between zero to one which helps to determine how much two items are similar to each other on a scale of zero to one. This similarity score is obtained measuring the similarity between the text details of both of the items. So, similarity score is the measure of similarity between given text details of two items. This can be done by cosine-similarity.
    
@@ -15,8 +17,6 @@ More about Cosine Similarity : [Understanding the Math behind Cosine Similarity]
 
 
 This is a hollywood movie recommender system built with Python. I've used IMDB 5000 Movie Dataset to built this.
-
-Live Demo : [Movie Recommender System by Kishan](https://movierecommendersystem.herokuapp.com)
 
 ### Snapshot
 
