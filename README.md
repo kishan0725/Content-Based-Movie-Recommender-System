@@ -20,7 +20,7 @@ This is a hollywood movie recommender system built with Python. I've used IMDB 5
 
 ### Snapshot
 
-![image](https://user-images.githubusercontent.com/36665975/71757979-59001e80-2ec0-11ea-9ffe-9df7a7aa0934.png)
+![image](https://user-images.githubusercontent.com/36665975/71776922-3c96db80-2fbf-11ea-8ea4-b93c5967c8a0.png)
 
 ### Sources of the datasets 
 
