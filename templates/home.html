@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <title>Movie Recommendation System</title>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+  	.movie {
+    	color: #fff;
+    	margin-left: auto;
+    	margin-right: auto;
+	resize: none;
+    }
+
+	.btn-block{
+    	width: 15%;
+    	text-align: center;
+    	margin-left: auto;
+    	margin-right: auto;
+    	color: #e4e0e0;
+    }
+
+    #content {
+    	background-image: url("../static/image.png");
+    	background-color: #181818
+    }
+
+
+  	.footer {
+  		color: #e4e0e0;
+  		text-align:right;
+  		position: fixed;
+       	bottom: 20px;
+       	right: 20px;
+       	width: 100%;
+  	}
+
+    h1 {
+	    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	    color: #e50914;
+	    font-weight: bold;
+	    margin-top: 30px;
+	}
+
+  </style>
+</head>
+<body id="content" style="font-family: 'IBM Plex Sans', sans-serif">
+
+
+	<div class="ml-container">
+		<center><h1 style=""> Movie Recommendation System</h2></center>
+		<form action="{{ url_for('recommend')}}">
+		
+		<!-- <input type="text" name="comment"/> -->
+		<div class="form-group shadow-textarea" style="margin-top: 30px;text-align: center;color: white;">
+			<input type="text" name="movie" class="movie form-control" placeholder="Movie name here" style="background-color: #ffffff;border-color:#ffffff;width: 60%;color: #181818" >
+		  <!-- <textarea class="form-control z-depth-1" name="message" id="exampleFormControlTextarea6" style="background-color: #282828;border-color: #282828;width: 60%;color: #A8A8A8;" rows="6" cols="70" placeholder="Your Message...."></textarea> -->
+		  <br/>
+		</div>
+
+		<div class="form-group" style="text-align: center;">
+  <button type="submit" class="btn btn-primary btn-block" style="background-color: #e50914;border-color: #e50914;"> Enter  </button><br><br>
+  </div>
+
+		
+	</form>
+		
+	</div>
+
+	<div class="results">
+
+		{% block content %}
+        {% endblock %}
+	</div>
+	
+	<div class="footer" style="">Made with<span class="love">&nbsp❤️️&nbsp</span>by Kishan</div>
+	
+	
+	
+
+</body>
+</html>
