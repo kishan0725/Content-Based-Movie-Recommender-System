@@ -3,6 +3,7 @@ import pandas as pd
 from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+import json
 
 def create_sim():
     data = pd.read_csv('final_data.csv')
@@ -52,6 +53,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return render_template('home.html')
+
 
 @app.route("/recommend")
 def recommend():
